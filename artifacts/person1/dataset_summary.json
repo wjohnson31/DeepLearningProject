@@ -1,0 +1,72 @@
+{
+  "source": "roneneldan/TinyStories",
+  "revision": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
+  "source_files": {
+    "train": "TinyStories-train.txt",
+    "validation": "TinyStories-valid.txt"
+  },
+  "license": "cdla-sharing-1.0",
+  "selection": "deterministic source-order prefixes of whole normalized stories",
+  "normalization": "strip and collapse whitespace, preserve case",
+  "deduplication_counts": {
+    "train": {
+      "scanned": 56534,
+      "empty_removed": 12,
+      "duplicates_removed": 100,
+      "train_overlap_removed": 0
+    },
+    "validation": {
+      "scanned": 2089,
+      "empty_removed": 0,
+      "duplicates_removed": 0,
+      "train_overlap_removed": 0
+    }
+  },
+  "selection_pool_stories": 56422,
+  "final_tokenizer_training_stories": 45852,
+  "tokenizer": {
+    "path": "tokenizer.json",
+    "sha256": "7f462f42aed8ca56c08153a183b13051dea1ae5672ed6cb4e0a766ee9c6ade9f"
+  },
+  "splits": {
+    "train": {
+      "path": "train.npy",
+      "tokens": 10000138,
+      "sha256": "c4163af275804b9ad8a83800e0847fa24d9e2a59e463ef3983541398194d35a0",
+      "windows": 78126,
+      "evaluated_target_tokens": 10000128,
+      "unused_tail_tokens": 9
+    },
+    "dev": {
+      "path": "dev.npy",
+      "tokens": 200143,
+      "sha256": "ece9c1ddb6c9e7a77b963850d5662c79e76d1db1c02c3a4586f56ba2e221a31b",
+      "windows": 1563,
+      "evaluated_target_tokens": 200064,
+      "unused_tail_tokens": 78
+    },
+    "test": {
+      "path": "test.npy",
+      "tokens": 200132,
+      "sha256": "953e4b16b33f563e340e558ed39a44ecd0fe1366d8d7863bddc586cc190bd990",
+      "windows": 1563,
+      "evaluated_target_tokens": 200064,
+      "unused_tail_tokens": 67
+    }
+  },
+  "story_counts": {
+    "train": 45852,
+    "dev": 1047,
+    "test": 1042
+  },
+  "vocab_size": 4096,
+  "context_length": 128,
+  "seed": 0,
+  "schema_version": 1,
+  "packing": "EOS between stories; windows stride context_length; incomplete final window dropped",
+  "targets": {
+    "train": 10000000,
+    "dev": 200000,
+    "test": 200000
+  }
+}

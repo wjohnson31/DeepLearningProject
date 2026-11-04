@@ -1,0 +1,11 @@
+{
+  "ce": 4.276333201793395,
+  "perplexity": 71.97603394954525,
+  "target_tokens": 200064,
+  "routing_counts": {},
+  "step": 200,
+  "checkpoint": "/Users/williamjohnson/Documents/ChatGPT/DeepLearningProject/runs/D1_cpu_pilot/best.pt",
+  "precision": "fp32",
+  "device": "cpu",
+  "split": "dev"
+}

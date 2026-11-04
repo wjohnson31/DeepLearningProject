@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "source": "roneneldan/TinyStories",
+  "seed": 0,
+  "model_type": "dense",
+  "parameters": 2590848,
+  "planned_steps": 5000,
+  "completed_steps": 5000,
+  "token_exposures": 20480000,
+  "selected_checkpoint_step": 5000,
+  "dev_ce": 2.437512498441905,
+  "dev_perplexity": 11.444537002318096,
+  "final_dev_ce": 2.437512498441905,
+  "final_dev_perplexity": 11.444537002318096,
+  "forward_matmul_flops_per_token": 5505024,
+  "training_seconds": 2006.8457176259253,
+  "elapsed_seconds": 2058.409749916056,
+  "session_profile_tokens_per_second": 10028.270505033406,
+  "session_profile_seconds": 1952.3685554924887,
+  "session_profile_tokens": 19578880,
+  "profile_warmup_updates": 20,
+  "peak_training_cuda_memory_bytes": null,
+  "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-15.0-arm64-arm-64bit",
+    "device": "cpu",
+    "device_name": "arm64",
+    "precision": "fp32",
+    "versions": {
+      "torch": "2.15.0",
+      "numpy": "2.5.4",
+      "tokenizers": "0.23.3",
+      "requests": "2.34.2",
+      "PyYAML": "6.0.3",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "data_identity": "6f7ac8da8f4244be8bd887febb9b5c652aba14501b2a24c9bdfa759f75405809",
+  "code_identity": "43024fa4b0e8e4e0cf4c6d2c7565b1d79fa97efc7402f61a5d310775a20e93b1",
+  "parent_checkpoint": "/Users/williamjohnson/Documents/ChatGPT/DeepLearningProject/runs/D1_cpu_pilot/last.pt",
+  "run_directory": "/Users/williamjohnson/Documents/ChatGPT/DeepLearningProject/runs/D1_cpu_full"
+}

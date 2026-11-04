@@ -1,0 +1,98 @@
+[
+  {
+    "step": 0,
+    "token_exposures": 0,
+    "ce": 8.352754760078337,
+    "perplexity": 4241.84994170781,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  },
+  {
+    "step": 200,
+    "token_exposures": 819200,
+    "ce": 4.276333201793395,
+    "perplexity": 71.97603394954525,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  },
+  {
+    "step": 500,
+    "token_exposures": 2048000,
+    "ce": 3.591746934926136,
+    "perplexity": 36.29742982068209,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  },
+  {
+    "step": 1000,
+    "token_exposures": 4096000,
+    "ce": 3.1356532682002696,
+    "perplexity": 23.00365849317387,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  },
+  {
+    "step": 1500,
+    "token_exposures": 6144000,
+    "ce": 2.9167824011160177,
+    "perplexity": 18.4817249094937,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  },
+  {
+    "step": 2000,
+    "token_exposures": 8192000,
+    "ce": 2.766517463435138,
+    "perplexity": 15.903154144730943,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  },
+  {
+    "step": 2500,
+    "token_exposures": 10240000,
+    "ce": 2.673334315733809,
+    "perplexity": 14.488196967911172,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  },
+  {
+    "step": 3000,
+    "token_exposures": 12288000,
+    "ce": 2.5916362281647998,
+    "perplexity": 13.351600004175516,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  },
+  {
+    "step": 3500,
+    "token_exposures": 14336000,
+    "ce": 2.5281493711074954,
+    "perplexity": 12.530295739049999,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  },
+  {
+    "step": 4000,
+    "token_exposures": 16384000,
+    "ce": 2.4837407205475497,
+    "perplexity": 11.986017002291572,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  },
+  {
+    "step": 4500,
+    "token_exposures": 18432000,
+    "ce": 2.454589076173359,
+    "perplexity": 11.641648735003187,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  },
+  {
+    "step": 5000,
+    "token_exposures": 20480000,
+    "ce": 2.437512498441905,
+    "perplexity": 11.444537002318096,
+    "target_tokens": 200064,
+    "routing_counts": {}
+  }
+]

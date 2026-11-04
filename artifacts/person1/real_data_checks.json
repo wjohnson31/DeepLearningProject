@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "source": "roneneldan/TinyStories",
+  "device": "cpu",
+  "logit_shape": [
+    2,
+    128,
+    4096
+  ],
+  "parameters": 2590848,
+  "causal_max_absolute_error": 0.0,
+  "repeated_batch_updates": 20,
+  "repeated_batch_initial_ce": 8.339944839477539,
+  "repeated_batch_final_ce": 3.2601170539855957,
+  "checkpoint_predictions_identical": true,
+  "batch_shift_and_resume_passed": true,
+  "interpretation": "correctness check only; not a trained baseline result"
+}

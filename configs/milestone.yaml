@@ -1,0 +1,46 @@
+seed: 0
+
+data:
+  dataset_id: roneneldan/TinyStories
+  revision: f54c09fd23315a6f9c86f9dc80f725de7d8f9c64
+  output_dir: data/processed/tinystories_10m_bpe4096
+  target_train_tokens: 10000000
+  target_dev_tokens: 200000
+  target_test_tokens: 200000
+  vocab_size: 4096
+  context_length: 128
+
+model:
+  model_type: dense
+  d_model: 192
+  n_heads: 4
+  n_layers: 4
+  d_ff: 768
+  dropout: 0.1
+  moe_layers: [1, 3]
+  num_experts: 4
+  top_k: 1
+
+moe:
+  balance_policy: fixed
+  alpha_start: 0.01
+  alpha_end: 0.001
+  z_loss_coefficient: 0.001
+
+training:
+  max_steps: 5000
+  micro_batch_size: 16
+  gradient_accumulation_steps: 2
+  peak_learning_rate: 0.001
+  min_learning_rate: 0.0001
+  warmup_steps: 200
+  weight_decay: 0.1
+  beta1: 0.9
+  beta2: 0.95
+  epsilon: 1.0e-8
+  gradient_clip_norm: 1.0
+  eval_interval: 500
+  log_interval: 10
+  precision: fp16
+  output_dir: runs
+

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.DS_Store
+
+# Large/generated experiment artifacts
+data/processed/
+runs/
+artifacts/figures/*.png
+tmp/
+output/
+

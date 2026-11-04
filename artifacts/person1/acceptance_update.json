@@ -1,0 +1,14 @@
+{
+  "step": 201,
+  "token_exposures": 823296,
+  "ce": 4.393307685852051,
+  "balance_loss": 0.0,
+  "router_z_loss": 0.0,
+  "total_loss": 4.393307685852051,
+  "alpha": 0.0,
+  "learning_rate": 0.001,
+  "gradient_norm": 0.6919551491737366,
+  "update_seconds": 0.9367083341348916,
+  "training_seconds": 50.586306422017515,
+  "fp16_overflow_retries": 0
+}

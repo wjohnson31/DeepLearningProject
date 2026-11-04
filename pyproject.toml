@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "small-moe-transformer"
+version = "0.1.0"
+description = "Dense and dropless mixture-of-experts language-model baselines for TinyStories"
+requires-python = ">=3.10"
+dependencies = [
+  "requests>=2.32,<3",
+  "matplotlib>=3.8,<4",
+  "numpy>=1.26,<3",
+  "pyyaml>=6.0,<7",
+  "tokenizers>=0.20,<1",
+  "torch>=2.4,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0,<10"]
+
+[project.scripts]
+moe-prepare = "moe_transformer.prepare_data:main"
+moe-train = "moe_transformer.train:main"
+moe-evaluate = "moe_transformer.evaluate:main"
+moe-check = "moe_transformer.checks:main"
+moe-plot = "moe_transformer.plotting:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/moe_transformer"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+

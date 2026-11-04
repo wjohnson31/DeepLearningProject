@@ -1,0 +1,45 @@
+seed: 0
+
+data:
+  dataset_id: synthetic
+  output_dir: data/processed/synthetic
+  target_train_tokens: 4096
+  target_dev_tokens: 1024
+  target_test_tokens: 1024
+  vocab_size: 64
+  context_length: 16
+
+model:
+  model_type: dense
+  d_model: 32
+  n_heads: 4
+  n_layers: 4
+  d_ff: 64
+  dropout: 0.0
+  moe_layers: [1, 3]
+  num_experts: 4
+  top_k: 1
+
+moe:
+  balance_policy: fixed
+  alpha_start: 0.01
+  alpha_end: 0.001
+  z_loss_coefficient: 0.001
+
+training:
+  max_steps: 10
+  micro_batch_size: 4
+  gradient_accumulation_steps: 2
+  peak_learning_rate: 0.001
+  min_learning_rate: 0.0001
+  warmup_steps: 1
+  weight_decay: 0.1
+  beta1: 0.9
+  beta2: 0.95
+  epsilon: 1.0e-8
+  gradient_clip_norm: 1.0
+  eval_interval: 5
+  log_interval: 1
+  precision: fp32
+  output_dir: runs
+
